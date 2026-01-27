@@ -70,7 +70,7 @@ const upload = () => {
     data.feedback = JSON.parse(feedbackText);
     await kv.set(`resume:${uuid}`, JSON.stringify(data));
     setstatusText("Resume Analyzed");
-    console.log(data);
+    navigate(`/resume/${uuid}`);
   };
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
