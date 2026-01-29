@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Link } from "react-router";
 import ScoreCircle from "./ScoreCircle";
 
@@ -11,10 +9,10 @@ const ResumeCard = ({ resume }: { resume: Resume }) => {
     >
       <div className="resume-card-header">
         <div className="flex flex-col gap-2">
-          <h2 className="text-black! fontbold break-words">
+          <h2 className="text-black! fontbold wrap-break-word">
             {resume.companyName}
           </h2>
-          <h3 className="text-lg break-words text-gray-500">
+          <h3 className="text-lg wrap-break-word text-gray-500">
             {resume.jobTitle}
           </h3>
         </div>
