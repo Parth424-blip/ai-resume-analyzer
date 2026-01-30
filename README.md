@@ -1,87 +1,31 @@
-# Welcome to React Router!
+# Resumind - AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Resumind is an intelligent, AI-powered tool designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS) and human recruiters. By leveraging advanced AI analysis, it provides detailed feedback on content, structure, and tone, ensuring your resume stands out in the competitive job market.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## What It Does
+
+Resumind eliminates the guesswork from job applications. Users can upload their resumes PDF along with a target job description. The application then uses AI to analyze the document against industry standards and the specific job requirements. It generates a comprehensive report that includes an overall match score, ATS compatibility rating, and specific, actionable tips to improve skills, tone, and content structure. All your past analyses are saved, allowing you to track your improvements over time.
+
+## Tech Stack
+
+This project is built with a modern, high-performance stack:
+
+- **Framework:** [React Router v7](https://reactrouter.com/) (SSR, Data Loading)
+- **Language:** TypeScript
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **State Management:** [Zustand](https://github.com/pmndrs/zustand)
+- **Backend & AI:** [Puter.js](https://puter.com/) (Auth, File System, KV Storage, AI Chat)
+- **PDF Processing:** pdfjs-dist
+- **Build Tool:** Vite
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+- **📄 Instant Resume Analysis:** Upload your resume and get immediate feedback.
+- **🎯 Job Description Matching:** Tailor your resume to specific job roles for higher success rates.
+- **📊 Detailed Scoring:**
+  - **ATS Score:** Check how well your resume parses for automated systems.
+  - **Content & Structure:** Get advice on formatting and clarity.
+  - **Tone & Style:** Ensure your professional voice matches the industry.
+- **💡 Actionable Insights:** Receive specific "Good" and "Improve" tips for every section.
+- **🗄️ Application Dashboard:** Save and manage your history of analyzed resumes.
+- **🔒 Secure Authentication:** Integrated user accounts via Puter.js.
