@@ -1,4 +1,4 @@
-import { prepareInstructions, AIResponseFormat } from "constants";
+import { prepareInstructions } from "constants";
 import React, { useState, type FormEvent } from "react";
 import { useNavigate } from "react-router";
 import FileUploader from "~/components/FileUploader";
